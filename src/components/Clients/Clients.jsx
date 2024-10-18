@@ -18,7 +18,7 @@ export const Clients = () => {
         try {
             console.log('Llamando a la API con page:', page); // Para depurar
             // const response = await axios.get(`http://localhost:4000/api/clients?page=${page}&limit=${pageSize}`);
-            const response = await axios.get(`https://backend-login-logout-crud-p3-9xw241i9t-latitargs-projects.vercel.app/api/clients?page=${page}&limit=${pageSize}`);
+            const response = await axios.get(`https://backend-login-logout-crud-p3.vercel.app//api/clients?page=${page}&limit=${pageSize}`);
             console.log('API Response:', response.data); // Para depuración
 
             const { data: clients, total } = response.data; // Cambia la destructuración según tu respuesta

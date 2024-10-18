@@ -32,7 +32,7 @@ export const ClientEdit = () => {
     try {
       // Actualizar el cliente
       // await axios.put(`http://localhost:4000/api/clients/${id}`, values);
-      await axios.put(`https://backend-login-logout-crud-p3-9xw241i9t-latitargs-projects.vercel.app/api/clients/${id}`, values);
+      await axios.put(`https://backend-login-logout-crud-p3.vercel.app//api/clients/${id}`, values);
       message.success('Cliente actualizado con éxito');
       navigate('/client'); // Navegar después de la actualización
     } catch (error) {
