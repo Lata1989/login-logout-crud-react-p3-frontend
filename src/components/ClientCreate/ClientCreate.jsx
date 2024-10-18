@@ -12,7 +12,8 @@ export const ClientCreate = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      await axios.post('http://localhost:4000/api/clients', values); // Usando axios
+      // await axios.post('http://localhost:4000/api/clients', values); // Usando axios
+      await axios.post('https://backend-login-logout-crud-p3-9xw241i9t-latitargs-projects.vercel.app/api/clients', values); // Usando axios
       message.success('Cliente creado con éxito');
       navigate('/client'); // Usa navigate aquí
     } catch (error) {
