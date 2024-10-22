@@ -16,7 +16,7 @@ export const ClientEdit = () => {
     const fetchClient = async () => {
       try {
         // Asegúrate de que la URL es correcta
-        const response = await axios.get(`http://localhost:4000/api/clients/${id}`);
+        const response = await axios.get(`https://backend-login-logout-crud-p3.vercel.app/api/clients/${id}`);
         setClient(response.data);
         setLoading(false);
       } catch (error) {
@@ -32,7 +32,7 @@ export const ClientEdit = () => {
     try {
       // Actualizar el cliente
       // await axios.put(`http://localhost:4000/api/clients/${id}`, values);
-      await axios.put(`https://backend-login-logout-crud-p3.vercel.app//api/clients/${id}`, values);
+      await axios.put(`https://backend-login-logout-crud-p3.vercel.app/api/clients/${id}`, values);
       message.success('Cliente actualizado con éxito');
       navigate('/client'); // Navegar después de la actualización
     } catch (error) {
